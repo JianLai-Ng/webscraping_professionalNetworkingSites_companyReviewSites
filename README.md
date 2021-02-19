@@ -4,12 +4,14 @@ Web Scraping Professional Networking Sites and Company Review Sites for company 
 Company_Check.ipynb contains a technical demo on how a company background, online presence and network is being checked and verified.
 
 Main Function of this notebook is written and run as-
-cred_check(company_name,n1,n2,n3)
-taking a company name as input and giving 'Fail to Authenticate', 'Low', 'Mid', or 'High' as output for level of credibility of company.
+
+*cred_check(company_name,n1,n2,n3)*, taking a company name as input and giving 'Fail to Authenticate', 'Low', 'Mid', or 'High' as output for level of credibility of company.
+
 	-'Fail to Authenticate' if url to company official site are not the same across sources or Company CEO cannot be verified with google search from site(s) aside from its source
 	-'Low' if the aforementioned criteria are fulfilled
 	-'Mid' if the aforementioned criteria are fulfilled, awards stated on professional networking site(s) can be verified with google search from site(s) aside from its source, and size of network of employees on professional networking site(s) is > n1
 	-'High' if the aforementioned criteria are fulfilled, company reviews from company review site(s) have similarities processed and measured using NLP and Sørensen–Dice <n2, and job openings stated on professional networking site(s) and company review site(s) >n3 
+	
 n1,n2,n3 are set to default at 100, 0.5 and 20 respectively without explicit input.
 n1,n2,n3 to be determined after mass scraping and analysis of trends across the different industries.
 
